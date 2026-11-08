@@ -1,0 +1,97 @@
+{
+  "sample": false,
+  "updatedAt": "2026-11-08T17:28:22.680Z",
+  "repos": [
+    {
+      "name": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "stars": 4085,
+      "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。"
+    },
+    {
+      "name": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "url": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "stars": 3215,
+      "desc": "Google_AI_Pro_2Year_ZeroCost_Auto"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "stars": 3067,
+      "desc": "YellowFruit third-party client"
+    },
+    {
+      "name": "NotRexed/Hookshot",
+      "url": "https://github.com/NotRexed/Hookshot",
+      "stars": 2603,
+      "desc": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake"
+    },
+    {
+      "name": "govijr/terminal-mac",
+      "url": "https://github.com/govijr/terminal-mac",
+      "stars": 2365,
+      "desc": "Entire MacOS running in your terminal."
+    },
+    {
+      "name": "JenkinWoo/sheeridVerify",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "stars": 1850,
+      "desc": ""
+    },
+    {
+      "name": "sarpstar/cinecode",
+      "url": "https://github.com/sarpstar/cinecode",
+      "stars": 1465,
+      "desc": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4."
+    },
+    {
+      "name": "Sandflow-ai/sand3d",
+      "url": "https://github.com/Sandflow-ai/sand3d",
+      "stars": 1335,
+      "desc": "3D modeling in Python, built for LLMs."
+    },
+    {
+      "name": "livliv-dev/player",
+      "url": "https://github.com/livliv-dev/player",
+      "stars": 1320,
+      "desc": "A lightweight 2.5D character player for the web, with lip sync and webcam face tracking."
+    },
+    {
+      "name": "mmdoctor/google-pro-helper",
+      "url": "https://github.com/mmdoctor/google-pro-helper",
+      "stars": 1217,
+      "desc": ""
+    }
+  ],
+  "rates": {
+    "date": "Sun, 08 Nov 2026",
+    "base": "CNY",
+    "items": [
+      {
+        "code": "USD",
+        "name": "美元",
+        "value": 0.149459
+      },
+      {
+        "code": "EUR",
+        "name": "欧元",
+        "value": 0.13397
+      },
+      {
+        "code": "JPY",
+        "name": "日元",
+        "value": 23.66114
+      },
+      {
+        "code": "GBP",
+        "name": "英镑",
+        "value": 0.111777
+      },
+      {
+        "code": "HKD",
+        "name": "港币",
+        "value": 1.171391
+      }
+    ]
+  }
+}

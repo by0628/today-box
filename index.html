@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#f5f6f8" />
+<meta name="description" content="每天自动换的数据 + 11 个小工具 + 一个 AI 小帮手，一页搞定。" />
+<title>今日盒子 · 数据 / 小工具 / 小帮手</title>
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="icon.svg" />
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --text:#1b1d22; --muted:#6b7280;
+    --line:#e6e8ec; --accent:#3b6ef6; --accent-soft:#eaf0ff;
+    --radius:16px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#111318; --card:#181b22; --text:#e8eaee; --muted:#9aa3b2;
+      --line:#262b35; --accent:#7aa2ff; --accent-soft:#1d2740;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",system-ui,sans-serif;
+    padding:20px 16px 48px; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  header h1{font-size:22px;margin:0 0 4px;letter-spacing:.5px}
+  header p{margin:0;color:var(--muted);font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-top:16px}
+  .card h2{font-size:15px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+  .card h3{font-size:13px;font-weight:500;color:var(--muted);margin:14px 0 8px}
+  .card h3:first-of-type{margin-top:0}
+  .tag{font-size:11px;font-weight:400;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:1px 8px;white-space:nowrap}
+  .small{font-size:13px}
+  .muted{color:var(--muted)}
+  a{color:var(--accent)}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{
+    border:1px solid var(--line);background:transparent;color:var(--text);
+    border-radius:99px;padding:6px 12px;font-size:14px;white-space:nowrap;cursor:pointer;
+    font-family:inherit;
+  }
+  .chip.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+  .row input[type=number],.row input[type=date],.row input[type=datetime-local]{flex:1 1 120px}
+  label{font-size:13px;color:var(--muted);display:block;margin-top:10px}
+  textarea,input[type=text],input[type=password],input[type=number],input[type=url],input[type=date],input[type=datetime-local]{
+    width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+    background:var(--bg);color:var(--text);font:inherit;font-size:14px;
+  }
+  textarea{resize:vertical}
+  input[type=range]{width:100%;accent-color:var(--accent)}
+  input[type=color]{width:56px;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:2px}
+  input[type=file]{width:100%;font-size:13px;color:var(--muted)}
+  .panel{display:none;margin-top:12px}
+  .panel.on{display:block}
+  .btn{
+    background:var(--accent);color:#fff;border:none;border-radius:10px;
+    padding:9px 14px;font-size:14px;cursor:pointer;font-family:inherit;
+  }
+  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .btn:disabled{opacity:.55}
+  pre.out{
+    background:var(--bg);border:1px solid var(--line);border-radius:10px;
+    padding:10px;font-size:13px;white-space:pre-wrap;word-break:break-all;
+    max-height:260px;overflow:auto;margin:10px 0 0;font-family:ui-monospace,Menlo,Consolas,monospace;
+    cursor:copy;
+  }
+  .list .repo{
+    display:flex;gap:10px;align-items:baseline;padding:10px 0;
+    border-top:1px solid var(--line);text-decoration:none;color:var(--text);
+  }
+  .list .repo:first-child{border-top:none}
+  .repo .rank{color:var(--muted);font-size:12px;width:16px;flex:none}
+  .repo-main{flex:1;min-width:0}
+  .repo-main strong{display:block;font-size:14px;color:var(--accent);word-break:break-all}
+  .repo-main .small{display:block;line-height:1.4;margin-top:2px}
+  .stars{flex:none;font-size:12px;color:var(--muted)}
+  .rates{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+  .rate{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px}
+  .rate b{display:block;font-size:16px;font-weight:600}
+  .rate span{font-size:12px;color:var(--muted)}
+  .quote{margin:0;font-size:15px;line-height:1.7}
+  details summary{cursor:pointer;font-size:14px;color:var(--muted);margin-bottom:8px}
+  .hist-item{padding:8px 0;border-top:1px solid var(--line);font-size:13px;cursor:pointer}
+  .hist-item:first-child{border-top:none}
+  .hist-q{color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .hist-a{color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  footer{margin-top:24px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日盒子</h1>
+    <p id="today">—</p>
+  </header>
+
+  <section class="card">
+    <h2>今天的数据 <span class="tag" id="dailyMeta">加载中</span></h2>
+
+    <h3>GitHub 新项目</h3>
+    <div class="list" id="repoList">
+      <p class="small muted" style="margin:0">正在读数据…</p>
+    </div>
+
+    <h3>汇率</h3>
+    <div class="rates" id="rateList">
+      <p class="small muted" style="margin:0">正在读数据…</p>
+    </div>
+
+    <h3>每日一句</h3>
+    <p class="quote" id="quoteText">—</p>
+    <p class="small muted" id="quoteFrom" style="margin:6px 0 0"></p>
+  </section>
+
+  <section class="card">
+    <h2>小工具</h2>
+    <div class="chips" id="toolChips">
+      <button class="chip on" data-panel="p-time">时间戳</button>
+      <button class="chip" data-panel="p-json">JSON</button>
+      <button class="chip" data-panel="p-b64">Base64</button>
+      <button class="chip" data-panel="p-url">URL</button>
+      <button class="chip" data-panel="p-pass">密码</button>
+      <button class="chip" data-panel="p-text">字数</button>
+      <button class="chip" data-panel="p-img">图片压缩</button>
+      <button class="chip" data-panel="p-color">颜色</button>
+      <button class="chip" data-panel="p-date">日期差</button>
+      <button class="chip" data-panel="p-rmb">大写金额</button>
+      <button class="chip" data-panel="p-diff">文本对比</button>
+    </div>
+
+    <div class="panel on" id="p-time">
+      <label>时间戳 → 时间（秒或毫秒都认）</label>
+      <div class="row">
+        <input type="number" id="tsIn" inputmode="numeric" placeholder="1730000000" />
+        <button class="btn ghost" id="tsNow">现在</button>
+        <button class="btn" id="tsBtn">转换</button>
+      </div>
+      <label>时间 → 时间戳</label>
+      <div class="row">
+        <input type="datetime-local" id="dtIn" />
+        <button class="btn" id="dtBtn">转换</button>
+      </div>
+      <pre class="out" id="timeOut" hidden></pre>
+    </div>
+
+    <div class="panel" id="p-json">
+      <textarea id="jsonIn" rows="6" placeholder='{"hello":"world"}'></textarea>
+      <div class="row">
+        <button class="btn" id="jsonPretty">美化</button>
+        <button class="btn ghost" id="jsonMin">压缩</button>
+      </div>
+      <pre class="out" id="jsonOut" hidden></pre>
+    </div>
+
+    <div class="panel" id="p-b64">
+      <textarea id="b64In" rows="5" placeholder="文字或 Base64…"></textarea>
+      <div class="row">
+        <button class="btn" id="b64Enc">编码</button>
+        <button class="btn ghost" id="b64Dec">解码</button>
+      </div>
+      <pre class="out" id="b64Out" hidden></pre>
+    </div>
+
+    <div class="panel" id="p-url">
+      <textarea id="urlIn" rows="4" placeholder="带中文的网址或参数…"></textarea>
+      <div class="row">
+        <button class="btn" id="urlEnc">编码</button>
+        <button class="btn ghost" id="urlDec">解码</button>
+      </div>
+      <pre class="out" id="urlOut" hidden></pre>
+    </div>
+
+    <div class="panel" id="p-pass">
+      <label>长度 <output id="passLenOut">16</output> 位</label>
+      <input type="range" id="passLen" min="8" max="32" value="16" />
+      <div class="row">
+        <label style="margin:0"><input type="checkbox" id="passUpper" checked /> 大写</label>
+        <label style="margin:0"><input type="checkbox" id="passNum" checked /> 数字</label>
+        <label style="margin:0"><input type="checkbox" id="passSym" checked /> 符号</label>
+      </div>
+      <div class="row"><button class="btn" id="passBtn">生成</button></div>
+      <pre class="out" id="passOut" hidden></pre>
+    </div>
+
+    <div class="panel" id="p-text">
+      <textarea id="textIn" rows="5" placeholder="粘贴文字…"></textarea>
+      <pre class="out" id="textStats">字 0 · 词 0 · 行 0</pre>
+      <div class="row"><button class="btn ghost" id="textDedupe">按行去重</button></div>
+    </div>
+
+    <div class="panel" id="p-img">
+      <p class="small muted" style="margin:0 0 8px">图片只在你的手机上处理，不上传。长边超过 1600 会等比缩小。</p>
+      <input type="file" id="imgIn" accept="image/*" />
+      <label>质量 <output id="qOut">0.72</output></label>
+      <input type="range" id="imgQ" min="0.3" max="0.95" step="0.01" value="0.72" />
+      <p class="small" id="imgInfo" style="margin:8px 0 0"></p>
+      <img id="imgPrev" alt="预览" hidden style="max-width:100%;border-radius:10px;margin-top:10px;border:1px solid var(--line)" />
+      <a id="imgSave" class="btn" hidden download="compressed.jpg" style="display:inline-block;text-decoration:none;margin-top:10px">保存图片</a>
+    </div>
+
+    <div class="panel" id="p-color">
+      <div class="row">
+        <input type="color" id="colorPick" value="#3b6ef6" />
+        <input type="text" id="colorHex" value="#3b6ef6" style="flex:1 1 140px" />
+      </div>
+      <pre class="out" id="colorOut">#3b6ef6</pre>
+    </div>
+
+    <div class="panel" id="p-date">
+      <label>从</label>
+      <div class="row"><input type="date" id="d1" /></div>
+      <label>到</label>
+      <div class="row">
+        <input type="date" id="d2" />
+        <button class="btn" id="dateBtn">算</button>
+      </div>
+      <pre class="out" id="dateOut" hidden></pre>
+    </div>
+
+    <div class="panel" id="p-rmb">
+      <input type="text" id="rmbIn" inputmode="decimal" placeholder="1234.56" />
+      <div class="row"><button class="btn" id="rmbBtn">转大写</button></div>
+      <pre class="out" id="rmbOut" hidden></pre>
+    </div>
+
+    <div class="panel" id="p-diff">
+      <textarea id="diffA" rows="4" placeholder="旧文本"></textarea>
+      <textarea id="diffB" rows="4" placeholder="新文本" style="margin-top:8px"></textarea>
+      <div class="row"><button class="btn" id="diffBtn">比一比</button></div>
+      <pre class="out" id="diffOut" hidden></pre>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>小帮手</h2>
+    <p class="small muted" style="margin:0 0 10px">
+      用你自己的 key，直接在手机上请求。key 只存在这个浏览器里，不经过任何服务器。
+    </p>
+    <details>
+      <summary>设置接口（第一次用先填这里）</summary>
+      <label>接口地址</label>
+      <input type="url" id="aiEndpoint" placeholder="https://api.deepseek.com/chat/completions" />
+      <label>模型名</label>
+      <input type="text" id="aiModel" placeholder="deepseek-chat" />
+      <label>Key</label>
+      <input type="password" id="aiKey" placeholder="sk-..." autocomplete="off" />
+      <div class="row">
+        <button class="btn ghost" id="aiSave">记在这台手机上</button>
+        <span class="small muted" id="aiSaved"></span>
+      </div>
+      <p class="small muted" style="margin:8px 0 0">
+        有的接口不允许网页直接调（跨域），真碰到就报个错，那时候再加个小代理。
+      </p>
+    </details>
+
+    <textarea id="askIn" rows="4" placeholder="粘贴一段文字，或者直接问…"></textarea>
+    <div class="chips" id="askChips">
+      <button class="chip" data-prompt="帮我把下面这段总结成三句话：">总结三点</button>
+      <button class="chip" data-prompt="把下面这段改写得像跟朋友说话：">说人话</button>
+      <button class="chip" data-prompt="把下面这段翻译成英文：">翻成英文</button>
+      <button class="chip" data-prompt="给下面这段起三个标题，风格各不相同：">起标题</button>
+      <button class="chip" data-prompt="帮我挑出下面这段里的错别字和语病，逐条说明：">挑错</button>
+      <button class="chip" data-prompt="把下面这段扩写一倍，保持原意：">扩写</button>
+    </div>
+    <div class="row"><button class="btn" id="askBtn">问一下</button></div>
+    <pre class="out" id="askOut" hidden></pre>
+
+    <div id="histWrap" hidden>
+      <h3 style="display:flex;justify-content:space-between;align-items:center">
+        <span>最近问过</span>
+        <button class="btn ghost small" id="histClear" style="padding:3px 10px">清空</button>
+      </h3>
+      <div id="histList"></div>
+    </div>
+  </section>
+
+  <footer class="small muted">数据每天自动更新 · 可加到手机主屏幕，断网也能用工具</footer>
+</div>
+
+<script>
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  };
+  var showOut = function (el, text) { el.hidden = false; el.textContent = text; };
+  var kb = function (n) { return (n / 1024).toFixed(n < 1024 * 100 ? 1 : 0) + ' KB'; };
+
+  var now = new Date();
+  $('#today').textContent =
+    now.getFullYear() + ' 年 ' + (now.getMonth() + 1) + ' 月 ' + now.getDate() +
+    ' 日 · 星期' + '日一二三四五六'[now.getDay()];
+
+  /* ---------- 每日一句 ---------- */
+  var QUOTES = [
+    { t: '慢慢来，比较快。', f: '佚名' },
+    { t: '先完成，再完美。', f: '佚名' },
+    { t: '不积跬步，无以至千里。', f: '荀子' },
+    { t: '日拱一卒，功不唐捐。', f: '胡适' },
+    { t: '知之为知之，不知为不知，是知也。', f: '《论语》' },
+    { t: '你不需要很厉害才能开始，你需要开始才会很厉害。', f: '佚名' },
+    { t: '种一棵树最好的时间是十年前，其次是现在。', f: '佚名' },
+    { t: '所有捷径，都是在绕远路。', f: '佚名' },
+    { t: '写作是把想清楚的事再想一遍。', f: '佚名' },
+    { t: '把一件小事做十年，就是大事。', f: '佚名' },
+    { t: '工具的意义，是让你忘记工具。', f: '佚名' },
+    { t: '少即是多。', f: '密斯·凡·德·罗' }
+  ];
+  var dayIdx = Math.floor((now - new Date(now.getFullYear(), 0, 1)) / 86400000);
+  var quote = QUOTES[dayIdx % QUOTES.length];
+  $('#quoteText').textContent = quote.t;
+  $('#quoteFrom').textContent = '—— ' + quote.f;
+
+  /* ---------- 每日数据 ---------- */
+  var fmtStars = function (n) {
+    n = Number(n) || 0;
+    return n >= 1000 ? (n / 1000).toFixed(1).replace('.0', '') + 'k' : String(n);
+  };
+  var ago = function (iso) {
+    var d = new Date(iso);
+    if (isNaN(d)) return '';
+    var m = Math.round((Date.now() - d) / 60000);
+    if (m < 1) return '刚刚';
+    if (m < 60) return m + ' 分钟前';
+    var h = Math.round(m / 60);
+    if (h < 24) return h + ' 小时前';
+    return Math.round(h / 24) + ' 天前';
+  };
+
+  function renderRepos(items) {
+    if (!items || !items.length) return false;
+    $('#repoList').innerHTML = items.slice(0, 10).map(function (it, i) {
+      return '<a class="repo" href="' + esc(it.url || '#') + '" target="_blank" rel="noopener">' +
+        '<span class="rank">' + (i + 1) + '</span>' +
+        '<span class="repo-main"><strong>' + esc(it.name || '') + '</strong>' +
+        '<span class="small muted">' + esc(it.desc || '还没有简介') + '</span></span>' +
+        '<span class="stars">★ ' + fmtStars(it.stars) + '</span></a>';
+    }).join('');
+    return true;
+  }
+
+  function renderRates(r) {
+    if (!r || !r.items || !r.items.length) return false;
+    $('#rateList').innerHTML = r.items.map(function (it) {
+      var per = 1 / Number(it.value);
+      var shown, label;
+      if (!isFinite(per)) return '';
+      if (per < 0.5) { shown = (per * 100).toFixed(2); label = '100 ' + it.name; }
+      else { shown = (per < 10 ? per.toFixed(2) : per.toFixed(1)); label = '1 ' + it.name; }
+      return '<div class="rate"><b>' + shown + ' 元</b><span>' + esc(label) + '</span></div>';
+    }).join('');
+    return true;
+  }
+
+  function loadDaily() {
+    var meta = $('#dailyMeta');
+    fetch('data/daily.json', { cache: 'no-store' })
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        var okRepo = renderRepos(data.repos);
+        var okRate = renderRates(data.rates);
+        if (!okRepo) $('#repoList').innerHTML = '<p class="small muted" style="margin:0">这块还没数据，等自动更新。</p>';
+        if (!okRate) $('#rateList').innerHTML = '<p class="small muted" style="margin:0">这块还没数据，等自动更新。</p>';
+        meta.textContent = (data.sample ? '示例 · ' : '') +
+          (data.updatedAt ? '更新于 ' + ago(data.updatedAt) : '已加载');
+        if (data.rates && data.rates.date) {
+          meta.textContent += ' · 汇率 ' + data.rates.date;
+        }
+      })
+      .catch(function () {
+        $('#repoList').innerHTML = '<p class="small muted" style="margin:0">还没有数据。把项目放到 GitHub、跑一次 Actions，' +
+          '这里第二天就有东西了。想先看效果，可以改 <a href="data/daily.json">data/daily.json</a>。</p>';
+        $('#rateList').innerHTML = '<p class="small muted" style="margin:0">同上。</p>';
+        meta.textContent = '暂无数据';
+      });
+  }
+  loadDaily();
+
+  /* ---------- 工具切换 + 点击复制 ---------- */
+  var chips = $$('.chip[data-panel]');
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.toggle('on', x === c); });
+      $$('.panel').forEach(function (p) { p.classList.toggle('on', p.id === c.dataset.panel); });
+    });
+  });
+
+  $$('pre.out').forEach(function (p) {
+    p.title = '点一下复制';
+    p.addEventListener('click', function () {
+      if (!p.textContent.trim()) return;
+      navigator.clipboard.writeText(p.textContent).then(function () {
+        p.style.outline = '2px solid var(--accent)';
+        setTimeout(function () { p.style.outline = ''; }, 400);
+      }).catch(function () {});
+    });
+  });
+
+  /* ---------- 时间戳 ---------- */
+  var timeOut = $('#timeOut');
+  function tsToDate() {
+    var raw = $('#tsIn').value.trim();
+    if (!raw) return;
+    var n = Number(raw);
+    if (!isFinite(n)) return showOut(timeOut, '这个不是数字');
+    var ms = String(Math.abs(Math.trunc(n))).length <= 10 ? n * 1000 : n;
+    var d = new Date(ms);
+    if (isNaN(d.getTime())) return showOut(timeOut, '超出范围了');
+    showOut(timeOut, '本地：' + d.toLocaleString('zh-CN') + '\nUTC：' + d.toUTCString() +
+      '\n相对：' + (ago(d.toISOString()) || '现在'));
+  }
+  $('#tsBtn').addEventListener('click', tsToDate);
+  $('#tsNow').addEventListener('click', function () {
+    $('#tsIn').value = Math.floor(Date.now() / 1000);
+    tsToDate();
+  });
+  $('#dtBtn').addEventListener('click', function () {
+    var v = $('#dtIn').value;
+    if (!v) return;
+    var t = new Date(v).getTime();
+    if (isNaN(t)) return showOut(timeOut, '先选个时间');
+    showOut(timeOut, '秒：' + Math.floor(t / 1000) + '\n毫秒：' + t);
+  });
+
+  /* ---------- JSON ---------- */
+  $('#jsonPretty').addEventListener('click', function () {
+    try { showOut($('#jsonOut'), JSON.stringify(JSON.parse($('#jsonIn').value), null, 2)); }
+    catch (e) { showOut($('#jsonOut'), '解析失败：' + e.message); }
+  });
+  $('#jsonMin').addEventListener('click', function () {
+    try { showOut($('#jsonOut'), JSON.stringify(JSON.parse($('#jsonIn').value))); }
+    catch (e) { showOut($('#jsonOut'), '解析失败：' + e.message); }
+  });
+
+  /* ---------- Base64 ---------- */
+  $('#b64Enc').addEventListener('click', function () {
+    try {
+      var bytes = new TextEncoder().encode($('#b64In').value);
+      var bin = '';
+      bytes.forEach(function (b) { bin += String.fromCharCode(b); });
+      showOut($('#b64Out'), btoa(bin));
+    } catch (e) { showOut($('#b64Out'), '编码失败'); }
+  });
+  $('#b64Dec').addEventListener('click', function () {
+    try {
+      var bin = atob($('#b64In').value.trim());
+      var bytes = Uint8Array.from(bin, function (c) { return c.charCodeAt(0); });
+      showOut($('#b64Out'), new TextDecoder().decode(bytes));
+    } catch (e) { showOut($('#b64Out'), '这不是合法的 Base64'); }
+  });
+
+  /* ---------- URL ---------- */
+  $('#urlEnc').addEventListener('click', function () {
+    try { showOut($('#urlOut'), encodeURIComponent($('#urlIn').value)); }
+    catch (e) { showOut($('#urlOut'), '编码失败：' + e.message); }
+  });
+  $('#urlDec').addEventListener('click', function () {
+    try { showOut($('#urlOut'), decodeURIComponent($('#urlIn').value)); }
+    catch (e) { showOut($('#urlOut'), '这段里有写坏的转义（%xx）'); }
+  });
+
+  /* ---------- 密码 ---------- */
+  var passLen = $('#passLen');
+  passLen.addEventListener('input', function () { $('#passLenOut').textContent = passLen.value; });
+  $('#passBtn').addEventListener('click', function () {
+    var chars = 'abcdefghijkmnpqrstuvwxyz';
+    if ($('#passUpper').checked) chars += 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+    if ($('#passNum').checked) chars += '23456789';
+    if ($('#passSym').checked) chars += '!@#$%^&*-_=+?';
+    var buf = new Uint32Array(Number(passLen.value));
+    crypto.getRandomValues(buf);
+    var out = '';
+    for (var i = 0; i < buf.length; i++) out += chars[buf[i] % chars.length];
+    showOut($('#passOut'), out);
+  });
+
+  /* ---------- 字数 ---------- */
+  var textIn = $('#textIn'), textStats = $('#textStats');
+  function stats() {
+    var v = textIn.value;
+    var chars = v.replace(/\s/g, '').length;
+    var words = (v.match(/[A-Za-z0-9_]+|[\u4e00-\u9fa5]/g) || []).length;
+    var lines = v ? v.split('\n').length : 0;
+    textStats.textContent = '字 ' + chars + ' · 词 ' + words + ' · 行 ' + lines;
+  }
+  textIn.addEventListener('input', stats);
+  stats();
+  $('#textDedupe').addEventListener('click', function () {
+    var seen = {};
+    textIn.value = textIn.value.split('\n').filter(function (l) {
+      var k = l.trim();
+      if (!k) return true;
+      if (seen[k]) return false;
+      seen[k] = 1;
+      return true;
+    }).join('\n');
+    stats();
+  });
+
+  /* ---------- 图片压缩 ---------- */
+  var imgFile = null;
+  function compress() {
+    if (!imgFile) return;
+    var q = Number($('#imgQ').value);
+    var url = URL.createObjectURL(imgFile);
+    var img = new Image();
+    img.onload = function () {
+      var max = 1600;
+      var w = img.naturalWidth, h = img.naturalHeight;
+      var scale = Math.min(1, max / Math.max(w, h));
+      w = Math.round(w * scale); h = Math.round(h * scale);
+      var cv = document.createElement('canvas');
+      cv.width = w; cv.height = h;
+      cv.getContext('2d').drawImage(img, 0, 0, w, h);
+      cv.toBlob(function (blob) {
+        URL.revokeObjectURL(url);
+        if (!blob) { $('#imgInfo').textContent = '压不了，换张图试试'; return; }
+        var out = URL.createObjectURL(blob);
+        var prev = $('#imgPrev');
+        prev.src = out; prev.hidden = false;
+        var a = $('#imgSave');
+        a.href = out; a.hidden = false;
+        var saved = Math.max(0, Math.round((1 - blob.size / imgFile.size) * 100));
+        $('#imgInfo').textContent = '原图 ' + kb(imgFile.size) + ' → ' + kb(blob.size) +
+          '，省了 ' + saved + '% · ' + w + '×' + h;
+      }, 'image/jpeg', q);
+    };
+    img.onerror = function () {
+      URL.revokeObjectURL(url);
+      $('#imgInfo').textContent = '这张图打不开，换一张';
+    };
+    img.src = url;
+  }
+  $('#imgIn').addEventListener('change', function (e) {
+    imgFile = e.target.files && e.target.files[0];
+    if (imgFile) compress();
+  });
+  $('#imgQ').addEventListener('input', function () {
+    $('#qOut').textContent = $('#imgQ').value;
+    compress();
+  });
+
+  /* ---------- 颜色 ---------- */
+  function hexToRgb(hex) {
+    hex = String(hex).trim().replace('#', '');
+    if (hex.length === 3) hex = hex.split('').map(function (c) { return c + c; }).join('');
+    if (!/^[0-9a-f]{6}$/i.test(hex)) return null;
+    return {
+      r: parseInt(hex.slice(0, 2), 16),
+      g: parseInt(hex.slice(2, 4), 16),
+      b: parseInt(hex.slice(4, 6), 16)
+    };
+  }
+  function rgbToHsl(r, g, b) {
+    r /= 255; g /= 255; b /= 255;
+    var max = Math.max(r, g, b), min = Math.min(r, g, b);
+    var h = 0, s, l = (max + min) / 2;
+    if (max === min) { h = 0; s = 0; }
+    else {
+      var d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+      if (max === r) h = ((g - b) / d + (g < b ? 6 : 0));
+      else if (max === g) h = (b - r) / d + 2;
+      else h = (r - g) / d + 4;
+      h /= 6;
+    }
+    return { h: Math.round(h * 360), s: Math.round(s * 100), l: Math.round(l * 100) };
+  }
+  function paintColor(hex) {
+    var rgb = hexToRgb(hex);
+    if (!rgb) return showOut($('#colorOut'), '这个色值看不懂，用 #3b6ef6 这种写法');
+    var hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
+    var h2 = rgb.r.toString(16).padStart(2, '0') + rgb.g.toString(16).padStart(2, '0') + rgb.b.toString(16).padStart(2, '0');
+    $('#colorHex').value = '#' + h2;
+    $('#colorPick').value = '#' + h2;
+    showOut($('#colorOut'), 'HEX  #' + h2.toUpperCase() +
+      '\nRGB  ' + rgb.r + ', ' + rgb.g + ', ' + rgb.b +
+      '\nHSL  ' + hsl.h + '°, ' + hsl.s + '%, ' + hsl.l + '%');
+  }
+  $('#colorPick').addEventListener('input', function () { paintColor($('#colorPick').value); });
+  $('#colorHex').addEventListener('change', function () { paintColor($('#colorHex').value); });
+  paintColor('#3b6ef6');
+
+  /* ---------- 日期差 ---------- */
+  function dstr(d) {
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+  $('#d1').value = dstr(now);
+  $('#d2').value = dstr(new Date(now.getTime() + 86400000 * 30));
+  $('#dateBtn').addEventListener('click', function () {
+    var a = $('#d1').value, b = $('#d2').value;
+    var out = $('#dateOut');
+    if (!a || !b) return showOut(out, '两个日期都要选');
+    var t1 = new Date(a + 'T00:00:00'), t2 = new Date(b + 'T00:00:00');
+    var days = Math.round((t2 - t1) / 86400000);
+    var abs = Math.abs(days);
+    showOut(out, '相差 ' + days + ' 天' +
+      '\n约 ' + (abs / 7).toFixed(1) + ' 周 · ' + (abs / 30.44).toFixed(1) + ' 个月 · ' + (abs / 365.25).toFixed(1) + ' 年' +
+      '\n' + (days === 0 ? '就是同一天' : days > 0 ? '后面的比前面的晚' : '后面的比前面的早'));
+  });
+
+  /* ---------- 人民币大写 ---------- */
+  function rmbUpper(num) {
+    var fraction = ['角', '分'];
+    var digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
+    var unit = [['元', '万', '亿'], ['', '拾', '佰', '仟']];
+    var head = num < 0 ? '欠' : '';
+    num = Math.abs(num);
+    var s = '';
+    for (var i = 0; i < fraction.length; i++) {
+      s += (digit[Math.floor(num * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
+    }
+    s = s || '整';
+    num = Math.floor(num);
+    for (var k = 0; k < unit[0].length && num > 0; k++) {
+      var p = '';
+      for (var j = 0; j < unit[1].length && num > 0; j++) {
+        p = digit[num % 10] + unit[1][j] + p;
+        num = Math.floor(num / 10);
+      }
+      s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][k] + s;
+    }
+    return head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
+  }
+  $('#rmbBtn').addEventListener('click', function () {
+    var v = $('#rmbIn').value.replace(/[,，\s]/g, '');
+    var n = Number(v);
+    if (!v || !isFinite(n)) return showOut($('#rmbOut'), '写个数字，比如 1234.56');
+    showOut($('#rmbOut'), rmbUpper(n));
+  });
+
+  /* ---------- 文本对比 ---------- */
+  function diffLines(a, b) {
+    var A = a.split('\n'), B = b.split('\n');
+    if (A.length * B.length > 200000) return null;
+    var dp = [];
+    for (var i = 0; i <= A.length; i++) dp.push(new Uint16Array(B.length + 1));
+    for (var x = A.length - 1; x >= 0; x--) {
+      for (var y = B.length - 1; y >= 0; y--) {
+        dp[x][y] = A[x] === B[y] ? dp[x + 1][y + 1] + 1 : Math.max(dp[x + 1][y], dp[x][y + 1]);
+      }
+    }
+    var out = [], p = 0, q = 0;
+    while (p < A.length && q < B.length) {
+      if (A[p] === B[q]) { out.push('  ' + A[p]); p++; q++; }
+      else if (dp[p + 1][q] >= dp[p][q + 1]) { out.push('- ' + A[p]); p++; }
+      else { out.push('+ ' + B[q]); q++; }
+    }
+    while (p < A.length) { out.push('- ' + A[p]); p++; }
+    while (q < B.length) { out.push('+ ' + B[q]); q++; }
+    return out.join('\n');
+  }
+  $('#diffBtn').addEventListener('click', function () {
+    var r = diffLines($('#diffA').value, $('#diffB').value);
+    if (!r) return showOut($('#diffOut'), '太长了，两段都控制在几百行以内');
+    showOut($('#diffOut'), r || '一模一样');
+  });
+
+  /* ---------- AI ---------- */
+  var LS = 'hezi.ai.cfg';
+  var cfg = { endpoint: 'https://api.deepseek.com/chat/completions', model: 'deepseek-chat', key: '' };
+  try { Object.assign(cfg, JSON.parse(localStorage.getItem(LS) || '{}')); } catch (e) {}
+  $('#aiEndpoint').value = cfg.endpoint;
+  $('#aiModel').value = cfg.model;
+  $('#aiKey').value = cfg.key;
+  $('#aiSave').addEventListener('click', function () {
+    cfg = {
+      endpoint: $('#aiEndpoint').value.trim() || cfg.endpoint,
+      model: $('#aiModel').value.trim() || cfg.model,
+      key: $('#aiKey').value.trim()
+    };
+    localStorage.setItem(LS, JSON.stringify(cfg));
+    $('#aiSaved').textContent = '记好了';
+    setTimeout(function () { $('#aiSaved').textContent = ''; }, 2000);
+  });
+
+  var preset = '';
+  $$('#askChips .chip').forEach(function (c) {
+    c.addEventListener('click', function () {
+      var on = c.classList.contains('on');
+      $$('#askChips .chip').forEach(function (x) { x.classList.remove('on'); });
+      if (!on) { c.classList.add('on'); preset = c.dataset.prompt || ''; } else { preset = ''; }
+    });
+  });
+
+  var HKEY = 'hezi.ai.hist';
+  function readHist() { try { return JSON.parse(localStorage.getItem(HKEY) || '[]'); } catch (e) { return []; } }
+  function saveHist(h) { localStorage.setItem(HKEY, JSON.stringify(h.slice(0, 12))); }
+  function renderHist() {
+    var h = readHist();
+    var wrap = $('#histWrap');
+    wrap.hidden = !h.length;
+    $('#histList').innerHTML = h.map(function (it, i) {
+      return '<div class="hist-item" data-i="' + i + '">' +
+        '<div class="hist-q">' + esc(it.q) + '</div>' +
+        '<div class="hist-a">' + esc((it.a || '').slice(0, 60)) + '</div></div>';
+    }).join('');
+    $$('#histList .hist-item').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var it = readHist()[Number(el.dataset.i)];
+        if (it) showOut($('#askOut'), it.a);
+      });
+    });
+  }
+  $('#histClear').addEventListener('click', function () {
+    localStorage.removeItem(HKEY);
+    $('#askOut').hidden = true;
+    renderHist();
+  });
+  renderHist();
+
+  $('#askBtn').addEventListener('click', function () {
+    var out = $('#askOut'), btn = $('#askBtn');
+    var text = $('#askIn').value.trim();
+    if (!text) return showOut(out, '先写点东西。');
+    if (!cfg.key) return showOut(out, '还没填 key。点上面「设置接口」，把 key 填进去（只存在这台手机上）。');
+
+    btn.disabled = true;
+    var label = btn.textContent;
+    btn.textContent = '等一下…';
+
+    fetch(cfg.endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + cfg.key },
+      body: JSON.stringify({
+        model: cfg.model,
+        messages: [
+          { role: 'system', content: '你是中文写作助手，回答简洁、口语化，不要客套。' },
+          { role: 'user', content: (preset ? preset + '\n\n' : '') + text }
+        ]
+      })
+    }).then(function (r) {
+      return r.text().then(function (raw) {
+        if (!r.ok) throw new Error(r.status + '：' + raw.slice(0, 160));
+        var data;
+        try { data = JSON.parse(raw); } catch (e) { throw new Error('返回的不是 JSON：' + raw.slice(0, 120)); }
+        var ans = data.choices && data.choices[0] && data.choices[0].message ? data.choices[0].message.content : '';
+        if (!ans) throw new Error('接口有返回，但没看到内容：' + raw.slice(0, 200));
+        showOut(out, ans);
+        var h = readHist();
+        h.unshift({ q: text.slice(0, 80), a: ans, t: Date.now() });
+        saveHist(h);
+        renderHist();
+      });
+    }).catch(function (e) {
+      showOut(out, '没成功：' + e.message + '\n\n如果是跨域（CORS）错误，说明这个接口不让网页直接调，需要加个小代理。');
+    }).then(function () {
+      btn.disabled = false;
+      btn.textContent = label;
+    });
+  });
+
+  /* ---------- 离线 ---------- */
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('./sw.js').catch(function () {});
+    });
+  }
+})();
+</script>
+</body>
+</html>

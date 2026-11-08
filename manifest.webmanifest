@@ -1,0 +1,19 @@
+{
+  "name": "今日盒子",
+  "short_name": "今日盒子",
+  "description": "每天自动换的数据、11 个小工具、一个 AI 小帮手。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f6f8",
+  "theme_color": "#f5f6f8",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
