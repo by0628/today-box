@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-08T17:28:22.680Z",
+  "updatedAt": "2026-11-08T18:01:17.860Z",
   "repos": [
     {
       "name": "KKKKhazix/agent-autoloop",
@@ -11,19 +11,19 @@
     {
       "name": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
       "url": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
-      "stars": 3215,
+      "stars": 3217,
       "desc": "Google_AI_Pro_2Year_ZeroCost_Auto"
     },
     {
       "name": "Minireel/HGhub",
       "url": "https://github.com/Minireel/HGhub",
-      "stars": 3067,
+      "stars": 3097,
       "desc": "YellowFruit third-party client"
     },
     {
       "name": "NotRexed/Hookshot",
       "url": "https://github.com/NotRexed/Hookshot",
-      "stars": 2603,
+      "stars": 2635,
       "desc": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake"
     },
     {
@@ -35,31 +35,31 @@
     {
       "name": "JenkinWoo/sheeridVerify",
       "url": "https://github.com/JenkinWoo/sheeridVerify",
-      "stars": 1850,
+      "stars": 1851,
       "desc": ""
     },
     {
       "name": "sarpstar/cinecode",
       "url": "https://github.com/sarpstar/cinecode",
-      "stars": 1465,
+      "stars": 1477,
       "desc": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4."
     },
     {
       "name": "Sandflow-ai/sand3d",
       "url": "https://github.com/Sandflow-ai/sand3d",
-      "stars": 1335,
+      "stars": 1341,
       "desc": "3D modeling in Python, built for LLMs."
     },
     {
       "name": "livliv-dev/player",
       "url": "https://github.com/livliv-dev/player",
-      "stars": 1320,
+      "stars": 1321,
       "desc": "A lightweight 2.5D character player for the web, with lip sync and webcam face tracking."
     },
     {
       "name": "mmdoctor/google-pro-helper",
       "url": "https://github.com/mmdoctor/google-pro-helper",
-      "stars": 1217,
+      "stars": 1220,
       "desc": ""
     }
   ],
