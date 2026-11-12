@@ -1,47 +1,47 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-12T00:37:24.747Z",
+  "updatedAt": "2026-11-12T08:17:12.732Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 6217,
+      "stars": 6630,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages."
     },
     {
       "name": "tangerineturtle1/NX2navi",
       "url": "https://github.com/tangerineturtle1/NX2navi",
-      "stars": 3251,
+      "stars": 3347,
       "desc": ""
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2586,
+      "stars": 2673,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
     },
     {
       "name": "JenkinWoo/sheeridVerify",
       "url": "https://github.com/JenkinWoo/sheeridVerify",
-      "stars": 2034,
+      "stars": 2046,
       "desc": ""
     },
     {
       "name": "DIYgod/pinky",
       "url": "https://github.com/DIYgod/pinky",
-      "stars": 1866,
+      "stars": 1919,
       "desc": "Let AI agents use your phone, with you in the loop."
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 1538,
+      "stars": 1651,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
     },
     {
       "name": "mahmoudtawfik1998/secure-pdf-document-processor",
       "url": "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor",
-      "stars": 1304,
+      "stars": 1305,
       "desc": "Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop"
     },
     {
@@ -64,33 +64,33 @@
     }
   ],
   "rates": {
-    "date": "Wed, 11 Nov 2026",
+    "date": "Thu, 12 Nov 2026",
     "base": "CNY",
     "items": [
       {
         "code": "USD",
         "name": "美元",
-        "value": 0.149528
+        "value": 0.149572
       },
       {
         "code": "EUR",
         "name": "欧元",
-        "value": 0.133736
+        "value": 0.134661
       },
       {
         "code": "JPY",
         "name": "日元",
-        "value": 23.713927
+        "value": 23.840624
       },
       {
         "code": "GBP",
         "name": "英镑",
-        "value": 0.11183
+        "value": 0.112555
       },
       {
         "code": "HKD",
         "name": "港币",
-        "value": 1.17294
+        "value": 1.173378
       }
     ]
   }
