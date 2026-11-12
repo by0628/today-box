@@ -1,66 +1,66 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-11T17:52:27.196Z",
+  "updatedAt": "2026-11-12T00:37:24.747Z",
   "repos": [
-    {
-      "name": "NotRexed/Hookshot",
-      "url": "https://github.com/NotRexed/Hookshot",
-      "stars": 7404,
-      "desc": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake"
-    },
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 6089,
+      "stars": 6217,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages."
     },
     {
       "name": "tangerineturtle1/NX2navi",
       "url": "https://github.com/tangerineturtle1/NX2navi",
-      "stars": 3137,
+      "stars": 3251,
       "desc": ""
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2572,
+      "stars": 2586,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
     },
     {
       "name": "JenkinWoo/sheeridVerify",
       "url": "https://github.com/JenkinWoo/sheeridVerify",
-      "stars": 2027,
+      "stars": 2034,
       "desc": ""
-    },
-    {
-      "name": "IainKay/ram-altman",
-      "url": "https://github.com/IainKay/ram-altman",
-      "stars": 1916,
-      "desc": "Monitors your RAM and reports any \"quite terrible\" unused capacity directly to the CEO of OpenAI."
-    },
-    {
-      "name": "jamesondh/chimera-vocal-synth",
-      "url": "https://github.com/jamesondh/chimera-vocal-synth",
-      "stars": 1914,
-      "desc": "the ultimate vocal synthesizer - sing, speak, beatbox, and more"
     },
     {
       "name": "DIYgod/pinky",
       "url": "https://github.com/DIYgod/pinky",
-      "stars": 1850,
+      "stars": 1866,
       "desc": "Let AI agents use your phone, with you in the loop."
-    },
-    {
-      "name": "mmdoctor/google-pro-helper",
-      "url": "https://github.com/mmdoctor/google-pro-helper",
-      "stars": 1714,
-      "desc": ""
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 1481,
+      "stars": 1538,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
+    },
+    {
+      "name": "mahmoudtawfik1998/secure-pdf-document-processor",
+      "url": "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor",
+      "stars": 1304,
+      "desc": "Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop"
+    },
+    {
+      "name": "hembramneeraj3-create/aida-64-extreme",
+      "url": "https://github.com/hembramneeraj3-create/aida-64-extreme",
+      "stars": 1304,
+      "desc": "Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration"
+    },
+    {
+      "name": "abdulmannanmalik13-wq/adobe-substance-3d-studio",
+      "url": "https://github.com/abdulmannanmalik13-wq/adobe-substance-3d-studio",
+      "stars": 1304,
+      "desc": "Adobe Substance 3D Creative Studio 2026 - Secure Asset Pipeline Desktop Installer"
+    },
+    {
+      "name": "AleRibeiro44/archicad-desktop-setup",
+      "url": "https://github.com/AleRibeiro44/archicad-desktop-setup",
+      "stars": 1301,
+      "desc": "Archicad 2026 complete standalone desktop setup with pre-configured ready-to-run installation build"
     }
   ],
   "rates": {
