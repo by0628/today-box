@@ -1,47 +1,47 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-12T17:33:21.100Z",
+  "updatedAt": "2026-11-12T23:33:49.378Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 6878,
+      "stars": 6931,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups."
     },
     {
       "name": "tangerineturtle1/NX2navi",
       "url": "https://github.com/tangerineturtle1/NX2navi",
-      "stars": 3464,
+      "stars": 3553,
       "desc": ""
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2748,
+      "stars": 2755,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
     },
     {
       "name": "JenkinWoo/sheeridVerify",
       "url": "https://github.com/JenkinWoo/sheeridVerify",
-      "stars": 2076,
+      "stars": 2080,
       "desc": ""
     },
     {
       "name": "DIYgod/pinky",
       "url": "https://github.com/DIYgod/pinky",
-      "stars": 1988,
+      "stars": 1998,
       "desc": "Let AI agents use your phone, with you in the loop."
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 1712,
+      "stars": 1722,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
     },
     {
       "name": "HybridRobotics/supermimic",
       "url": "https://github.com/HybridRobotics/supermimic",
-      "stars": 1287,
+      "stars": 1302,
       "desc": "Humanoid whole-body motion tracking with one differentiable world model."
     },
     {
@@ -53,7 +53,7 @@
     {
       "name": "hembramneeraj3-create/aida-64-extreme",
       "url": "https://github.com/hembramneeraj3-create/aida-64-extreme",
-      "stars": 1207,
+      "stars": 1208,
       "desc": "Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration"
     },
     {
