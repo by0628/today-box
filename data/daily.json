@@ -1,66 +1,66 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-12T08:17:12.732Z",
+  "updatedAt": "2026-11-12T17:33:21.100Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 6630,
-      "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages."
+      "stars": 6878,
+      "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups."
     },
     {
       "name": "tangerineturtle1/NX2navi",
       "url": "https://github.com/tangerineturtle1/NX2navi",
-      "stars": 3347,
+      "stars": 3464,
       "desc": ""
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2673,
+      "stars": 2748,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
     },
     {
       "name": "JenkinWoo/sheeridVerify",
       "url": "https://github.com/JenkinWoo/sheeridVerify",
-      "stars": 2046,
+      "stars": 2076,
       "desc": ""
     },
     {
       "name": "DIYgod/pinky",
       "url": "https://github.com/DIYgod/pinky",
-      "stars": 1919,
+      "stars": 1988,
       "desc": "Let AI agents use your phone, with you in the loop."
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 1651,
+      "stars": 1712,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
+    },
+    {
+      "name": "HybridRobotics/supermimic",
+      "url": "https://github.com/HybridRobotics/supermimic",
+      "stars": 1287,
+      "desc": "Humanoid whole-body motion tracking with one differentiable world model."
     },
     {
       "name": "mahmoudtawfik1998/secure-pdf-document-processor",
       "url": "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor",
-      "stars": 1305,
+      "stars": 1212,
       "desc": "Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop"
     },
     {
       "name": "hembramneeraj3-create/aida-64-extreme",
       "url": "https://github.com/hembramneeraj3-create/aida-64-extreme",
-      "stars": 1304,
+      "stars": 1207,
       "desc": "Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration"
     },
     {
       "name": "abdulmannanmalik13-wq/adobe-substance-3d-studio",
       "url": "https://github.com/abdulmannanmalik13-wq/adobe-substance-3d-studio",
-      "stars": 1304,
+      "stars": 1207,
       "desc": "Adobe Substance 3D Creative Studio 2026 - Secure Asset Pipeline Desktop Installer"
-    },
-    {
-      "name": "AleRibeiro44/archicad-desktop-setup",
-      "url": "https://github.com/AleRibeiro44/archicad-desktop-setup",
-      "stars": 1301,
-      "desc": "Archicad 2026 complete standalone desktop setup with pre-configured ready-to-run installation build"
     }
   ],
   "rates": {
