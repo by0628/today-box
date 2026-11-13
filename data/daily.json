@@ -1,66 +1,66 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-13T15:20:44.491Z",
+  "updatedAt": "2026-11-13T21:57:14.606Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 7203,
+      "stars": 7279,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups."
     },
     {
       "name": "tangerineturtle1/NX2navi",
       "url": "https://github.com/tangerineturtle1/NX2navi",
-      "stars": 3752,
+      "stars": 3853,
       "desc": ""
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2846,
+      "stars": 2862,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 1870,
+      "stars": 1906,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
     },
     {
       "name": "HybridRobotics/supermimic",
       "url": "https://github.com/HybridRobotics/supermimic",
-      "stars": 1413,
+      "stars": 1430,
       "desc": "Humanoid whole-body motion tracking with one differentiable world model."
-    },
-    {
-      "name": "agentes-chat/agentes-chat",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "stars": 1295,
-      "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
     },
     {
       "name": "apex-compute/ANR",
       "url": "https://github.com/apex-compute/ANR",
-      "stars": 1280,
+      "stars": 1427,
       "desc": "Apex Neural Rendering (ANR) by Apex Compute"
+    },
+    {
+      "name": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "stars": 1331,
+      "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
     },
     {
       "name": "FrigadeHQ/yogurt",
       "url": "https://github.com/FrigadeHQ/yogurt",
-      "stars": 1182,
+      "stars": 1246,
       "desc": "Private AI meeting notes. Free and open source."
-    },
-    {
-      "name": "Th0rgal/satmux",
-      "url": "https://github.com/Th0rgal/satmux",
-      "stars": 1070,
-      "desc": "Accelerate high-latency GEO inflight Wi-Fi via warm BBR TCP multiplexing + 1-RTT Ground-TLS + zlib (zero dependencies)"
     },
     {
       "name": "HolyArrs/HolyArrs",
       "url": "https://github.com/HolyArrs/HolyArrs",
-      "stars": 1057,
+      "stars": 1093,
       "desc": "One self-hosted app for your shows, movies and music."
+    },
+    {
+      "name": "Th0rgal/satmux",
+      "url": "https://github.com/Th0rgal/satmux",
+      "stars": 1073,
+      "desc": "Accelerate high-latency GEO inflight Wi-Fi via warm BBR TCP multiplexing + 1-RTT Ground-TLS + zlib (zero dependencies)"
     }
   ],
   "rates": {
