@@ -1,96 +1,96 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-12T23:33:49.378Z",
+  "updatedAt": "2026-11-13T06:34:51.751Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 6931,
+      "stars": 7049,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups."
     },
     {
       "name": "tangerineturtle1/NX2navi",
       "url": "https://github.com/tangerineturtle1/NX2navi",
-      "stars": 3553,
+      "stars": 3643,
       "desc": ""
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2755,
+      "stars": 2799,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
-    },
-    {
-      "name": "JenkinWoo/sheeridVerify",
-      "url": "https://github.com/JenkinWoo/sheeridVerify",
-      "stars": 2080,
-      "desc": ""
-    },
-    {
-      "name": "DIYgod/pinky",
-      "url": "https://github.com/DIYgod/pinky",
-      "stars": 1998,
-      "desc": "Let AI agents use your phone, with you in the loop."
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 1722,
+      "stars": 1753,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
     },
     {
       "name": "HybridRobotics/supermimic",
       "url": "https://github.com/HybridRobotics/supermimic",
-      "stars": 1302,
+      "stars": 1354,
       "desc": "Humanoid whole-body motion tracking with one differentiable world model."
     },
     {
-      "name": "mahmoudtawfik1998/secure-pdf-document-processor",
-      "url": "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor",
-      "stars": 1212,
-      "desc": "Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop"
+      "name": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "stars": 1240,
+      "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
     },
     {
-      "name": "hembramneeraj3-create/aida-64-extreme",
-      "url": "https://github.com/hembramneeraj3-create/aida-64-extreme",
-      "stars": 1208,
-      "desc": "Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration"
+      "name": "apex-compute/ANR",
+      "url": "https://github.com/apex-compute/ANR",
+      "stars": 1089,
+      "desc": "Apex Neural Rendering (ANR) by Apex Compute"
     },
     {
-      "name": "abdulmannanmalik13-wq/adobe-substance-3d-studio",
-      "url": "https://github.com/abdulmannanmalik13-wq/adobe-substance-3d-studio",
-      "stars": 1207,
-      "desc": "Adobe Substance 3D Creative Studio 2026 - Secure Asset Pipeline Desktop Installer"
+      "name": "Th0rgal/satmux",
+      "url": "https://github.com/Th0rgal/satmux",
+      "stars": 1058,
+      "desc": "Accelerate high-latency GEO inflight Wi-Fi via warm BBR TCP multiplexing + 1-RTT Ground-TLS + zlib (zero dependencies)"
+    },
+    {
+      "name": "FrigadeHQ/yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "stars": 1028,
+      "desc": "Private AI meeting notes. Free and open source."
+    },
+    {
+      "name": "HolyArrs/HolyArrs",
+      "url": "https://github.com/HolyArrs/HolyArrs",
+      "stars": 1014,
+      "desc": "One self-hosted app for your shows, movies and music."
     }
   ],
   "rates": {
-    "date": "Thu, 12 Nov 2026",
+    "date": "Fri, 13 Nov 2026",
     "base": "CNY",
     "items": [
       {
         "code": "USD",
         "name": "美元",
-        "value": 0.149572
+        "value": 0.149588
       },
       {
         "code": "EUR",
         "name": "欧元",
-        "value": 0.134661
+        "value": 0.135165
       },
       {
         "code": "JPY",
         "name": "日元",
-        "value": 23.840624
+        "value": 23.907965
       },
       {
         "code": "GBP",
         "name": "英镑",
-        "value": 0.112555
+        "value": 0.112939
       },
       {
         "code": "HKD",
         "name": "港币",
-        "value": 1.173378
+        "value": 1.173418
       }
     ]
   }
