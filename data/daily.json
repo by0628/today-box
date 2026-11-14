@@ -1,65 +1,65 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-14T17:02:09.470Z",
+  "updatedAt": "2026-11-14T21:25:52.916Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 7530,
+      "stars": 7548,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups."
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2953,
+      "stars": 2982,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 2042,
+      "stars": 2052,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
     },
     {
       "name": "apex-compute/ANR",
       "url": "https://github.com/apex-compute/ANR",
-      "stars": 1733,
+      "stars": 1796,
       "desc": "Apex Neural Rendering (ANR) by Apex Compute"
     },
     {
       "name": "deepseek-ai/chat-demo",
       "url": "https://github.com/deepseek-ai/chat-demo",
-      "stars": 1632,
+      "stars": 1709,
       "desc": "Chat Demo"
     },
     {
       "name": "HybridRobotics/supermimic",
       "url": "https://github.com/HybridRobotics/supermimic",
-      "stars": 1489,
+      "stars": 1495,
       "desc": "Humanoid whole-body motion tracking with one differentiable world model."
     },
     {
       "name": "FrigadeHQ/yogurt",
       "url": "https://github.com/FrigadeHQ/yogurt",
-      "stars": 1405,
+      "stars": 1455,
       "desc": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux."
     },
     {
       "name": "agentes-chat/agentes-chat",
       "url": "https://github.com/agentes-chat/agentes-chat",
-      "stars": 1382,
+      "stars": 1392,
       "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
     },
     {
       "name": "HolyArrs/HolyArrs",
       "url": "https://github.com/HolyArrs/HolyArrs",
-      "stars": 1160,
+      "stars": 1174,
       "desc": "One self-hosted app for your shows, movies and music."
     },
     {
       "name": "DevedevT/FFmpeg-GUI-Editor-Windows",
       "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
-      "stars": 1045,
+      "stars": 1047,
       "desc": "Lightweight portable FFmpeg GUI & lossless video trimmer for Windows (ready-to-use .exe). Supports English, Russian, Chinese, German, French & Italian."
     }
   ],
