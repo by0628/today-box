@@ -1,96 +1,96 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-13T21:57:14.606Z",
+  "updatedAt": "2026-11-14T02:23:07.993Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 7279,
+      "stars": 7344,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups."
-    },
-    {
-      "name": "tangerineturtle1/NX2navi",
-      "url": "https://github.com/tangerineturtle1/NX2navi",
-      "stars": 3853,
-      "desc": ""
     },
     {
       "name": "jhaizhou-ops/S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
-      "stars": 2862,
+      "stars": 2874,
       "desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。"
     },
     {
       "name": "Kianuni/Erosion-CN",
       "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 1906,
+      "stars": 1932,
       "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
-    },
-    {
-      "name": "HybridRobotics/supermimic",
-      "url": "https://github.com/HybridRobotics/supermimic",
-      "stars": 1430,
-      "desc": "Humanoid whole-body motion tracking with one differentiable world model."
     },
     {
       "name": "apex-compute/ANR",
       "url": "https://github.com/apex-compute/ANR",
-      "stars": 1427,
+      "stars": 1499,
       "desc": "Apex Neural Rendering (ANR) by Apex Compute"
+    },
+    {
+      "name": "HybridRobotics/supermimic",
+      "url": "https://github.com/HybridRobotics/supermimic",
+      "stars": 1439,
+      "desc": "Humanoid whole-body motion tracking with one differentiable world model."
     },
     {
       "name": "agentes-chat/agentes-chat",
       "url": "https://github.com/agentes-chat/agentes-chat",
-      "stars": 1331,
+      "stars": 1345,
       "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
     },
     {
       "name": "FrigadeHQ/yogurt",
       "url": "https://github.com/FrigadeHQ/yogurt",
-      "stars": 1246,
-      "desc": "Private AI meeting notes. Free and open source."
+      "stars": 1287,
+      "desc": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux."
     },
     {
       "name": "HolyArrs/HolyArrs",
       "url": "https://github.com/HolyArrs/HolyArrs",
-      "stars": 1093,
+      "stars": 1103,
       "desc": "One self-hosted app for your shows, movies and music."
     },
     {
-      "name": "Th0rgal/satmux",
-      "url": "https://github.com/Th0rgal/satmux",
-      "stars": 1073,
-      "desc": "Accelerate high-latency GEO inflight Wi-Fi via warm BBR TCP multiplexing + 1-RTT Ground-TLS + zlib (zero dependencies)"
+      "name": "deepseek-ai/chat-demo",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "stars": 829,
+      "desc": "Chat Demo"
+    },
+    {
+      "name": "kolbicz/WQFiles",
+      "url": "https://github.com/kolbicz/WQFiles",
+      "stars": 804,
+      "desc": "File browser, app data manager and cache cleaner for iOS 26 and 27 (worse_query, no jailbreak)"
     }
   ],
   "rates": {
-    "date": "Fri, 13 Nov 2026",
+    "date": "Sat, 14 Nov 2026",
     "base": "CNY",
     "items": [
       {
         "code": "USD",
         "name": "美元",
-        "value": 0.149588
+        "value": 0.149591
       },
       {
         "code": "EUR",
         "name": "欧元",
-        "value": 0.135165
+        "value": 0.135603
       },
       {
         "code": "JPY",
         "name": "日元",
-        "value": 23.907965
+        "value": 23.920176
       },
       {
         "code": "GBP",
         "name": "英镑",
-        "value": 0.112939
+        "value": 0.113208
       },
       {
         "code": "HKD",
         "name": "港币",
-        "value": 1.173418
+        "value": 1.173683
       }
     ]
   }
