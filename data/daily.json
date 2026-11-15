@@ -1,65 +1,65 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-15T17:03:52.257Z",
+  "updatedAt": "2026-11-15T21:44:36.530Z",
   "repos": [
     {
       "name": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 7717,
+      "stars": 7730,
       "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups."
     },
     {
       "name": "deepseek-ai/chat-demo",
       "url": "https://github.com/deepseek-ai/chat-demo",
-      "stars": 2610,
+      "stars": 2862,
       "desc": "Chat Demo"
-    },
-    {
-      "name": "Kianuni/Erosion-CN",
-      "url": "https://github.com/Kianuni/Erosion-CN",
-      "stars": 2121,
-      "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
     },
     {
       "name": "apex-compute/ANR",
       "url": "https://github.com/apex-compute/ANR",
-      "stars": 2027,
+      "stars": 2159,
       "desc": "Apex Neural Rendering (ANR) by Apex Compute"
+    },
+    {
+      "name": "Kianuni/Erosion-CN",
+      "url": "https://github.com/Kianuni/Erosion-CN",
+      "stars": 2124,
+      "desc": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）"
     },
     {
       "name": "FrigadeHQ/yogurt",
       "url": "https://github.com/FrigadeHQ/yogurt",
-      "stars": 1598,
+      "stars": 1625,
       "desc": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux."
-    },
-    {
-      "name": "DevedevT/FFmpeg-GUI-Editor-Windows",
-      "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
-      "stars": 1542,
-      "desc": "Lightweight portable FFmpeg GUI & lossless video trimmer for Windows (ready-to-use .exe). Supports English, Russian, Chinese, German, French & Italian."
     },
     {
       "name": "HybridRobotics/supermimic",
       "url": "https://github.com/HybridRobotics/supermimic",
-      "stars": 1538,
+      "stars": 1549,
       "desc": "Humanoid whole-body motion tracking with one differentiable world model."
     },
     {
       "name": "agentes-chat/agentes-chat",
       "url": "https://github.com/agentes-chat/agentes-chat",
-      "stars": 1477,
+      "stars": 1493,
       "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
+    },
+    {
+      "name": "DevedevT/FFmpeg-GUI-Editor-Windows",
+      "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
+      "stars": 1394,
+      "desc": "Lightweight portable FFmpeg GUI & lossless video trimmer for Windows (ready-to-use .exe). Supports English, Russian, Chinese, German, French & Italian."
     },
     {
       "name": "HolyArrs/HolyArrs",
       "url": "https://github.com/HolyArrs/HolyArrs",
-      "stars": 1232,
+      "stars": 1250,
       "desc": "One self-hosted app for your shows, movies and music."
     },
     {
       "name": "adriadam10/mkw-recomp",
       "url": "https://github.com/adriadam10/mkw-recomp",
-      "stars": 1119,
+      "stars": 1197,
       "desc": "Static recompilation of Mario Kart World (Nintendo Switch 2) to a native PC program"
     }
   ],
