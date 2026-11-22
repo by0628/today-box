@@ -1,96 +1,96 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-21T23:09:49.652Z",
+  "updatedAt": "2026-11-22T03:12:17.761Z",
   "repos": [
     {
       "name": "erkamyaman/rust-anything",
       "url": "https://github.com/erkamyaman/rust-anything",
-      "stars": 7383,
+      "stars": 7485,
       "desc": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java."
-    },
-    {
-      "name": "krisgfx9/Wireless-Device-Battery-Monitor",
-      "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
-      "stars": 5794,
-      "desc": "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. Lightweight tray app, no vendor software needed. Supports Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox and Bluetooth devices."
     },
     {
       "name": "ItsNotRexed/Leonida",
       "url": "https://github.com/ItsNotRexed/Leonida",
-      "stars": 4614,
+      "stars": 6458,
       "desc": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6"
+    },
+    {
+      "name": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+      "stars": 5850,
+      "desc": "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. Lightweight tray app, no vendor software needed. Supports Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox and Bluetooth devices."
     },
     {
       "name": "gylive/google-ultra",
       "url": "https://github.com/gylive/google-ultra",
-      "stars": 2597,
+      "stars": 2602,
       "desc": ""
     },
     {
       "name": "bookwjitchieni1986/blender-ai-mcp-addon",
       "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-      "stars": 2327,
+      "stars": 2543,
       "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration."
-    },
-    {
-      "name": "Hut-hzf/ung220z-tool",
-      "url": "https://github.com/Hut-hzf/ung220z-tool",
-      "stars": 2215,
-      "desc": "ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。"
     },
     {
       "name": "iamajmeena/neonclipping",
       "url": "https://github.com/iamajmeena/neonclipping",
-      "stars": 1731,
+      "stars": 1750,
       "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM)."
     },
     {
       "name": "sybil-solutions/inference-optimisation-skill",
       "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-      "stars": 1598,
+      "stars": 1701,
       "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization"
     },
     {
-      "name": "joshpuckett/allo",
-      "url": "https://github.com/joshpuckett/allo",
-      "stars": 1343,
-      "desc": "Allo is your friendly neighborhood typeface, free and open source"
+      "name": "hatsunemiku-ai/google-one-tools",
+      "url": "https://github.com/hatsunemiku-ai/google-one-tools",
+      "stars": 1091,
+      "desc": ""
     },
     {
       "name": "chuanqisun/spaceship",
       "url": "https://github.com/chuanqisun/spaceship",
-      "stars": 1020,
+      "stars": 1025,
       "desc": "Steer ideas like a space pilot!"
+    },
+    {
+      "name": "Lemxy/WinRust",
+      "url": "https://github.com/Lemxy/WinRust",
+      "stars": 969,
+      "desc": "Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe."
     }
   ],
   "rates": {
-    "date": "Fri, 20 Nov 2026",
+    "date": "Sun, 22 Nov 2026",
     "base": "CNY",
     "items": [
       {
         "code": "USD",
         "name": "美元",
-        "value": 0.149433
+        "value": 0.149403
       },
       {
         "code": "EUR",
         "name": "欧元",
-        "value": 0.136198
+        "value": 0.136285
       },
       {
         "code": "JPY",
         "name": "日元",
-        "value": 23.877343
+        "value": 23.762728
       },
       {
         "code": "GBP",
         "name": "英镑",
-        "value": 0.113982
+        "value": 0.11418
       },
       {
         "code": "HKD",
         "name": "港币",
-        "value": 1.172212
+        "value": 1.170877
       }
     ]
   }
