@@ -1,66 +1,66 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-23T01:38:22.645Z",
+  "updatedAt": "2026-11-23T10:41:28.239Z",
   "repos": [
     {
       "name": "ItsNotRexed/Leonida",
       "url": "https://github.com/ItsNotRexed/Leonida",
-      "stars": 15364,
+      "stars": 18440,
       "desc": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6"
     },
     {
       "name": "bookwjitchieni1986/blender-ai-mcp-addon",
       "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-      "stars": 2748,
+      "stars": 2760,
       "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration."
-    },
-    {
-      "name": "iamajmeena/neonclipping",
-      "url": "https://github.com/iamajmeena/neonclipping",
-      "stars": 2098,
-      "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM)."
     },
     {
       "name": "EL4CTEO/fast-anything",
       "url": "https://github.com/EL4CTEO/fast-anything",
-      "stars": 1941,
+      "stars": 2550,
       "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same."
+    },
+    {
+      "name": "iamajmeena/neonclipping",
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "stars": 2213,
+      "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM)."
     },
     {
       "name": "omonkeyz/xbox-emulator",
       "url": "https://github.com/omonkeyz/xbox-emulator",
-      "stars": 1327,
+      "stars": 1461,
       "desc": "Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)"
     },
     {
       "name": "R0Y00/Xbox2Windows",
       "url": "https://github.com/R0Y00/Xbox2Windows",
-      "stars": 1316,
+      "stars": 1384,
       "desc": "GTA VI static recompilation research for x64 Windows. Source-built EXEs run on Windows, and two translated pixel shaders match reference outputs on hardware and WARP. Full-game startup is unverified."
     },
     {
       "name": "Lemxy/WinRust",
       "url": "https://github.com/Lemxy/WinRust",
-      "stars": 1243,
+      "stars": 1309,
       "desc": "Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe."
     },
     {
-      "name": "MSNightmare/FastUnlock",
-      "url": "https://github.com/MSNightmare/FastUnlock",
-      "stars": 682,
-      "desc": "FastUnlock : Windows Narrator LockScreen Bypass 0day Vulnerability"
+      "name": "os6/nospeaker",
+      "url": "https://github.com/os6/nospeaker",
+      "stars": 814,
+      "desc": "make your macbook's trackpad talk using its haptic motor"
     },
     {
       "name": "leanprover-community/riemann-hypothesis",
       "url": "https://github.com/leanprover-community/riemann-hypothesis",
-      "stars": 633,
+      "stars": 717,
       "desc": "Independent Comparator setup for the Lean formalization of the Riemann Hypothesis (Alpöge, 2026-11-20)"
     },
     {
-      "name": "0xkaka/homeport",
-      "url": "https://github.com/0xkaka/homeport",
-      "stars": 623,
-      "desc": ""
+      "name": "AFK-surf/xnulinux",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "stars": 717,
+      "desc": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)"
     }
   ],
   "rates": {
