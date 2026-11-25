@@ -1,96 +1,96 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-24T18:51:34.940Z",
+  "updatedAt": "2026-11-25T03:01:40.334Z",
   "repos": [
     {
       "name": "Marvisak/VIctory",
       "url": "https://github.com/Marvisak/VIctory",
-      "stars": 10470,
+      "stars": 11494,
       "desc": "An attempt at running GTA VI on PC"
     },
     {
       "name": "xcl-dev/xcl",
       "url": "https://github.com/xcl-dev/xcl",
-      "stars": 7478,
+      "stars": 7897,
       "desc": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL"
     },
     {
       "name": "EL4CTEO/fast-anything",
       "url": "https://github.com/EL4CTEO/fast-anything",
-      "stars": 3549,
+      "stars": 3638,
       "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same."
     },
     {
       "name": "AFK-surf/xnulinux",
       "url": "https://github.com/AFK-surf/xnulinux",
-      "stars": 3190,
+      "stars": 3441,
       "desc": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)"
-    },
-    {
-      "name": "iamajmeena/neonclipping",
-      "url": "https://github.com/iamajmeena/neonclipping",
-      "stars": 2455,
-      "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM)."
     },
     {
       "name": "4lwayz/portwatch-vi",
       "url": "https://github.com/4lwayz/portwatch-vi",
-      "stars": 2420,
+      "stars": 2983,
       "desc": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily."
+    },
+    {
+      "name": "iamajmeena/neonclipping",
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "stars": 2495,
+      "desc": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM)."
+    },
+    {
+      "name": "fxceless/victory-fork",
+      "url": "https://github.com/fxceless/victory-fork",
+      "stars": 2097,
+      "desc": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files."
+    },
+    {
+      "name": "ubiquitarianism/leonida",
+      "url": "https://github.com/ubiquitarianism/leonida",
+      "stars": 1931,
+      "desc": "A continuation of Leonida, the Xbox > PC port interface for GTA VI"
     },
     {
       "name": "R0Y00/Xbox2Windows",
       "url": "https://github.com/R0Y00/Xbox2Windows",
-      "stars": 1873,
+      "stars": 1915,
       "desc": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified."
     },
     {
       "name": "omonkeyz/xbox-emulator",
       "url": "https://github.com/omonkeyz/xbox-emulator",
-      "stars": 1791,
+      "stars": 1828,
       "desc": "Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)"
-    },
-    {
-      "name": "os6/nospeaker",
-      "url": "https://github.com/os6/nospeaker",
-      "stars": 1705,
-      "desc": "make your macbook's trackpad talk using its haptic motor"
-    },
-    {
-      "name": "ubiquitarianism/leonida",
-      "url": "https://github.com/ubiquitarianism/leonida",
-      "stars": 1632,
-      "desc": "A continuation of Leonida, the Xbox > PC port interface of GTA VI"
     }
   ],
   "rates": {
-    "date": "Tue, 24 Nov 2026",
+    "date": "Wed, 25 Nov 2026",
     "base": "CNY",
     "items": [
       {
         "code": "USD",
         "name": "美元",
-        "value": 0.149717
+        "value": 0.149742
       },
       {
         "code": "EUR",
         "name": "欧元",
-        "value": 0.137002
+        "value": 0.13683
       },
       {
         "code": "JPY",
         "name": "日元",
-        "value": 23.831691
+        "value": 23.855795
       },
       {
         "code": "GBP",
         "name": "英镑",
-        "value": 0.114694
+        "value": 0.114465
       },
       {
         "code": "HKD",
         "name": "港币",
-        "value": 1.173958
+        "value": 1.174129
       }
     ]
   }
