@@ -1,96 +1,96 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-26T23:50:18.843Z",
+  "updatedAt": "2026-11-27T08:18:52.016Z",
   "repos": [
     {
       "name": "Marvisak/VIctory",
       "url": "https://github.com/Marvisak/VIctory",
-      "stars": 13343,
+      "stars": 13532,
       "desc": "An attempt at running GTA VI on PC"
-    },
-    {
-      "name": "xcl-dev/xcl",
-      "url": "https://github.com/xcl-dev/xcl",
-      "stars": 8604,
-      "desc": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL"
     },
     {
       "name": "4lwayz/portwatch-vi",
       "url": "https://github.com/4lwayz/portwatch-vi",
-      "stars": 5748,
+      "stars": 6117,
       "desc": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily."
-    },
-    {
-      "name": "AFK-surf/xnulinux",
-      "url": "https://github.com/AFK-surf/xnulinux",
-      "stars": 4235,
-      "desc": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)"
     },
     {
       "name": "EL4CTEO/fast-anything",
       "url": "https://github.com/EL4CTEO/fast-anything",
-      "stars": 4225,
+      "stars": 4331,
       "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same."
-    },
-    {
-      "name": "fxceless/victory-fork",
-      "url": "https://github.com/fxceless/victory-fork",
-      "stars": 3279,
-      "desc": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files."
     },
     {
       "name": "Belobug/VIctory-Belobug-AMD",
       "url": "https://github.com/Belobug/VIctory-Belobug-AMD",
-      "stars": 2811,
+      "stars": 3567,
       "desc": ""
+    },
+    {
+      "name": "fxceless/victory-fork",
+      "url": "https://github.com/fxceless/victory-fork",
+      "stars": 3303,
+      "desc": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files."
     },
     {
       "name": "ubiquitarianism/leonida",
       "url": "https://github.com/ubiquitarianism/leonida",
-      "stars": 2527,
+      "stars": 2563,
       "desc": "A continuation of Leonida, the Xbox > PC port interface for GTA VI"
-    },
-    {
-      "name": "R0Y00/Xbox2Windows",
-      "url": "https://github.com/R0Y00/Xbox2Windows",
-      "stars": 1964,
-      "desc": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified."
     },
     {
       "name": "os6/nospeaker",
       "url": "https://github.com/os6/nospeaker",
-      "stars": 1954,
+      "stars": 1967,
       "desc": "make your macbook's trackpad talk using its haptic motor"
+    },
+    {
+      "name": "avatarmanz/VIctory-7900XTX",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX",
+      "stars": 1883,
+      "desc": "Goal: an Xbox Series title (your own dump) on PC as the Series X version at 4K with ray tracing, picture matching the Xbox first (textures, lighting), then 30+ fps. Porting, not emulating. RX 7900 XTX first. No game files."
+    },
+    {
+      "name": "omonkeyz/xbox-emulator",
+      "url": "https://github.com/omonkeyz/xbox-emulator",
+      "stars": 1853,
+      "desc": "Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)"
+    },
+    {
+      "name": "alesha-pro/llm.asm",
+      "url": "https://github.com/alesha-pro/llm.asm",
+      "stars": 1758,
+      "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies."
     }
   ],
   "rates": {
-    "date": "Thu, 26 Nov 2026",
+    "date": "Fri, 27 Nov 2026",
     "base": "CNY",
     "items": [
       {
         "code": "USD",
         "name": "美元",
-        "value": 0.14963
+        "value": 0.149815
       },
       {
         "code": "EUR",
         "name": "欧元",
-        "value": 0.136594
+        "value": 0.136636
       },
       {
         "code": "JPY",
         "name": "日元",
-        "value": 23.833762
+        "value": 23.870344
       },
       {
         "code": "GBP",
         "name": "英镑",
-        "value": 0.114375
+        "value": 0.114387
       },
       {
         "code": "HKD",
         "name": "港币",
-        "value": 1.172802
+        "value": 1.174149
       }
     ]
   }
