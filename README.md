@@ -24,7 +24,7 @@ Key 只存在浏览器 localStorage 里；最近 12 次问答也存在本地，�
 3. 打开仓库 **Settings → Pages**，Source 选 `Deploy from a branch`，分支 `main`，目录 `/ (root)`，保存。
 4. 等一分钟，访问 `https://你的用户名.github.io/today-box/`。
 5. 打开仓库 **Actions** 页，点 `每天更新数据` → `Run workflow` 跑一次，确认能跑通。
-   之后每天北京时间早上 6:10 自动跑（workflow 里写的是 UTC 22:10）。
+   之后 workflow 每小时执行一次；只有 `data/daily.json` 发生变化时才提交新记录。
 
 放到 Cloudflare Pages 也行：连仓库、构建命令留空、输出目录填 `/`。
 
@@ -52,7 +52,7 @@ icon.svg                    图标
 sw.js                       离线缓存
 data/daily.json             页面读的数据（自动更新）
 scripts/fetch-daily.mjs     抓数据的脚本
-.github/workflows/daily.yml 每天定时跑
+.github/workflows/daily.yml 定时执行的数据更新工作流
 ```
 
 ## 本地预览
