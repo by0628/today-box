@@ -1,65 +1,65 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T10:18:58.207Z",
+  "updatedAt": "2026-11-28T18:53:58.034Z",
   "repos": [
     {
       "name": "Marvisak/VIctory",
       "url": "https://github.com/Marvisak/VIctory",
-      "stars": 13945,
+      "stars": 14105,
       "desc": "An attempt at running GTA VI on PC"
     },
     {
       "name": "trustno1-coder/VIctory-NVIDIA",
       "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
-      "stars": 4831,
+      "stars": 6297,
       "desc": "VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X at 2560x1440 with DLSS, about 26-30 fps on an RTX 5070, DLSS frame generation 2x-6x, an F1 settings menu and F3 stats panel, open water without dark blocks. Built on many repos combined into one. No game files or NVIDIA files included."
     },
     {
       "name": "fxceless/victory-fork",
       "url": "https://github.com/fxceless/victory-fork",
-      "stars": 3373,
+      "stars": 3379,
       "desc": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files."
     },
     {
       "name": "ProjectLeonida/mandy",
       "url": "https://github.com/ProjectLeonida/mandy",
-      "stars": 3062,
+      "stars": 3209,
       "desc": "A continuation of Leonida, the Xbox > PC port interface for GTA VI"
     },
     {
       "name": "nexu-io/opengame",
       "url": "https://github.com/nexu-io/opengame",
-      "stars": 2591,
+      "stars": 2874,
       "desc": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more."
     },
     {
       "name": "alesha-pro/llm.asm",
       "url": "https://github.com/alesha-pro/llm.asm",
-      "stars": 2444,
+      "stars": 2749,
       "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies."
     },
     {
       "name": "Reukix/Reloc",
       "url": "https://github.com/Reukix/Reloc",
-      "stars": 2023,
+      "stars": 2511,
       "desc": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)"
     },
     {
       "name": "os6/nospeaker",
       "url": "https://github.com/os6/nospeaker",
-      "stars": 2002,
+      "stars": 2013,
       "desc": "make your macbook's trackpad talk using its haptic motor"
     },
     {
       "name": "crhywun/g1-acq",
       "url": "https://github.com/crhywun/g1-acq",
-      "stars": 1836,
+      "stars": 1854,
       "desc": ""
     },
     {
       "name": "Avaneesh-Inamdar/Stream-Tube-Desktop",
       "url": "https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop",
-      "stars": 1711,
+      "stars": 1782,
       "desc": "Native YouTube client for Windows in Rust, with SponsorBlock, DeArrow and Return YouTube Dislike built in"
     }
   ],
